@@ -21,3 +21,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cards-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 100%;
+}
+
+.card {
+  border: 0.1rem solid #212121;
+  border-radius: .5rem;
+  margin-bottom: .3rem;
+  text-align: center;
+}
+
+img {
+  max-width: auto;
+  height: 18rem;
+
+}
+
+.title {
+  font-size: medium;
+  margin: .3rem 0 .3rem 0;
+  text-justify: auto;
+  
+}
+
+.divider {
+  min-width: 100%;
+  background-color: rgba(0, 0, 0, 0.114);
+  padding: .1rem;
+  border-radius: 1rem;
+  margin: 1rem 0 1rem 0;
+}

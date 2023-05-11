@@ -17,7 +17,7 @@ const CategoryAdd = ( { setCategories } ) => {
         if( inputValue != '' ) {
             
             setCategories((cats) => {
-             return [...cats, inputValue];
+             return [ inputValue, ...cats];
             });
             setInputValue('');
         }

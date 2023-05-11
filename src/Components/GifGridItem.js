@@ -1,16 +1,16 @@
 import React from 'react';
+import '../index.css';
 
 export const GifGridItem = ( { gif }) => {
 
-   console.log(gif);
-    return <div>
+    return <div className='cards-grid'>
         {
             gif.map( g => {
                 return (
-                    <li>
-                        <img src={ g.img } alt={ g.title } />
-                        <p>{ g.title }</p>
-                    </li>
+                        <div className='card' key={ g.id}>
+                            <img src={ g.img } alt={ g.title } />
+                            <p>{ g.title }</p>
+                        </div>
                 )
             })
         }
